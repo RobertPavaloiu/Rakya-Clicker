@@ -60,3 +60,39 @@ function wideUpgrade() {
   }
 }
 wideButton.addEventListener("click", wideUpgrade);
+
+//u5
+let nationButton = document.querySelector("#u5");
+function nationUpgrade() {
+  if (count >= 250000) {
+    multiplier += 15000;
+    count -= 250000;
+    output.innerHTML = `Current Count: ${count}`;
+    clicks.innerHTML = `Rakya per click: ${multiplier}`;
+  }
+}
+nationButton.addEventListener("click", nationUpgrade);
+
+//u6
+let factoryButton = document.querySelector("#u6");
+function factoryUpgrade() {
+  if (count >= 2500000) {
+    multiplier += 150000;
+    count -= 2500000;
+    output.innerHTML = `Current Count: ${count}`;
+    clicks.innerHTML = `Rakya per click: ${multiplier}`;
+  }
+}
+factoryButton.addEventListener("click", factoryUpgrade);
+
+//u7
+let internationlButton = document.querySelector("#u7");
+function factoryUpgrade() {
+  if (count >= 50000000) {
+    multiplier *= 3;
+    count -= 50000000;
+    output.innerHTML = `Current Count: ${count}`;
+    clicks.innerHTML = `Rakya per click: ${multiplier}`;
+  }
+}
+internationalButton.addEventListener("click", internationalUpgrade);
